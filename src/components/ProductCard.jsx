@@ -9,7 +9,6 @@ function ProductCard({ product }) {
         `Hello FitFuel,I want to order:\n\n`+
         `Product: ${product.name}\n`+
         `Brand: ${product.brand}\n`+
-        `Category: ${product.category}\n`+
         `Please share the availability and price.`;
 
         const encodedMessage = encodeURIComponent(message);

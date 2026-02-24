@@ -11,7 +11,7 @@ function CategoryCard({ category }) {
   return (
     <div
       onClick={handleClick}
-      className="bg-[#F8F9FB] rounded-2xl p-4 shadow-sm hover:shadow-lg transition duration-300 cursor-pointer"
+      className="bg-white border border-gray-300 rounded-2xl p-4 shadow-sm hover:shadow-lg transition duration-300 cursor-pointer"
     >
 
       <div className="bg-white rounded-xl p-4">
@@ -24,7 +24,7 @@ function CategoryCard({ category }) {
 
       <div className="mt-4">
 
-        <h2 className="text-lg font-semibold">
+        <h2 className="text-lg font-semibold text-black">
           {category.name}
         </h2>
 
