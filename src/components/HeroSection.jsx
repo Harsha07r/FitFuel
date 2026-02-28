@@ -29,7 +29,7 @@ function HeroSection() {
         </span>
 
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-8 leading-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-8 leading-tight">
 
           FitFuel – Your College <br className="hidden md:block" />
 
@@ -43,8 +43,7 @@ function HeroSection() {
         <p className="mt-4 max-w-2xl mx-auto text-[1.5rem] leading-relaxed text-blue-100/90 font-light">
 
           Premium supplements delivered straight to your dorm. Fast,
-          affordable, and student-verified. Skip the shipping fees and wait times.
-
+          affordable, and student-verified. 
         </p>
 
 
@@ -75,30 +74,6 @@ function HeroSection() {
           >
             View Catalog
           </a>
-
-        </div>
-
-
-        {/* Features */}
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-90 text-blue-100">
-
-          <div className="flex items-center gap-2 border-white/30 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
-            <span className="text-sm font-medium">
-              Authentic Products
-            </span>
-          </div>
-
-          <div className="flex items-center gap-2 border-white/30 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
-            <span className="text-sm font-medium">
-              Express Delivery
-            </span>
-          </div>
-
-          <div className="flex items-center gap-2 border-white/30 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
-            <span className="text-sm font-medium">
-              Pay on Delivery
-            </span>
-          </div>
 
         </div>
 

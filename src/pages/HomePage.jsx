@@ -3,6 +3,8 @@ import CategoryCard from "../components/CategoryCard";
 import Navbar from "../components/Navbar"
 import HeroSection from "../components/HeroSection"
 import HowItWorks from "../components/HowItWorks"
+import Testimonials from "../components/Testimonials"
+import Footer from "../components/Footer"
 function HomePage() {
 
   return (
@@ -35,13 +37,9 @@ function HomePage() {
   
   <HowItWorks />
 
-      {/* Footer */}
-      <footer className="text-center py-6 border-t border-gray-800 text-[#CBD5E1]">
+  <Testimonials />
 
-        © 2026 FitFuel. College Supplement Partner.
-
-      </footer>
-
+    <Footer />
 
     </div>
 
