@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h3
               className="text-xs font-bold uppercase tracking-widest mb-6"
               style={{ color: '#FFFFFF' }}
@@ -81,7 +81,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>

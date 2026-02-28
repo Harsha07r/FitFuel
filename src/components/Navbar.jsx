@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-6 md:px-12 py-4">
 
         {/* Logo */}
-        <h3 className="text-xl font-bold text-gray-900">FitFuel</h3>
+        <h3 className="text-xl font-bold text-blue">FitFuel</h3>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-10 list-none">
