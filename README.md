@@ -43,3 +43,14 @@ useParams() reads categoryName = "Whey Protein"
 products.filter() keeps only Whey Protein products
               ↓
 Those products render on screen
+
+-------------------
+### Created HomePage Sections ###
+
+->Fixed overall responsiveness in the HomePage main Div
+->Added NavBar,How-to-order,Footer,fixed Hero Section
+->Used AOS for clean Fade up Animation across Homepage
+
+-------------------
+Cart Functionality ->CartContext , Product Deatils Page
+

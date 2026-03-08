@@ -43,7 +43,7 @@ function HeroSection() {
         <p className="mt-4 max-w-2xl mx-auto text-[1.5rem] leading-relaxed text-blue-100/90 font-light">
 
           Premium supplements delivered straight to your dorm. Fast,
-          affordable, and student-verified. 
+          affordable, and student-verified.
         </p>
 
 
@@ -62,7 +62,7 @@ function HeroSection() {
 
           <a
             className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-lg text-[#0F172A] bg-white hover:bg-blue-50 md:text-lg transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
-            href="https://wa.me/919103582173?text=Hi%20FitFuel,%20I'm%20interested%20in%20ordering"
+            href="https://wa.me/919493221473?text=Hi%20FitFuel,%20I'm%20interested%20in%20ordering"
           >
             Order via WhatsApp
           </a>

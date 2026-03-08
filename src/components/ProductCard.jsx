@@ -1,38 +1,38 @@
 
 function ProductCard({ product }) {
 
-    const phoneNumber = "919493221473";
+  const phoneNumber = "919493221473";
 
-    const handleWhatsapp = () => {
+  const handleWhatsapp = () => {
 
-        const message =
-        `Hello FitFuel,I want to order:\n\n`+
-        `Product: ${product.name}\n`+
-        `Brand: ${product.brand}\n`+
-        `Please share the availability and price.`;
+    const message =
+      `Hello FitFuel,I want to order:\n\n` +
+      `Product: ${product.name}\n` +
+      `Brand: ${product.brand}\n` +
+      `Please share the availability and price.`;
 
-        const encodedMessage = encodeURIComponent(message);
+    const encodedMessage = encodeURIComponent(message);
 
-        const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
-        window.open(url,"_blank");
-    }
+    window.open(url, "_blank");
+  }
 
   return (
     <div className="bg-[#1E293B] rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 gap-8">
 
       {/* Image Section */}
-    
+
       {/* Content */}
       <div className="p-5">
-             
-               <div className="bg-[#0F172A] p-6 flex justify-center items-center mb-3 rounded-xl">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="h-48 object-contain"
-        />
-      </div>
+
+        <div className="bg-[#0F172A] p-6 flex justify-center items-center mb-3 rounded-xl">
+          <img
+            src={product.img || product.image}
+            alt={product.name}
+            className="h-48 object-contain"
+          />
+        </div>
 
         {/* Brand + Rating */}
         <div className="flex justify-between items-center mb-2">
@@ -53,29 +53,33 @@ function ProductCard({ product }) {
         </h2>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-4">
-          {product.tags.map((tag, index) => (
-            <span
-              key={index}
-              className="text-xs border border-gray-600 text-gray-300 px-2 py-1 rounded-md"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
+        {product.tags && product.tags.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-4">
+            {product.tags.map((tag, index) => (
+              <span
+                key={index}
+                className="text-xs border border-gray-600 text-gray-300 px-2 py-1 rounded-md"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
 
-        {/* Info */}
-        <p className="text-blue-400 text-sm mb-4">
-          Campus Availability & Price on WhatsApp
+        {/* Stock Status */}
+        <p className={`text-sm font-medium mb-4 ${parseInt(product.stock) > 0 ? "text-green-400" : "text-red-400"}`}>
+          {parseInt(product.stock) > 0
+            ? `Stock: ${product.stock}`
+            : "Out of Stock"}
         </p>
 
         {/* Button */}
-      <button
-  onClick={handleWhatsapp}
-  className="w-full border border-gray-500 text-white py-2 rounded-lg hover:bg-white hover:text-black transition"
->
-  Inquire Now →
-</button>
+        <button
+          onClick={handleWhatsapp}
+          className="w-full border border-gray-500 text-white py-2 rounded-lg hover:bg-white hover:text-black transition"
+        >
+          Inquire Now →
+        </button>
       </div>
 
     </div>
