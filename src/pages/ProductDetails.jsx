@@ -15,7 +15,7 @@ const ProductDetails = () => {
         setProduct(selectedProduct)
       })
 
-  }, [id])
+  }, [productId])
 
   if (!product) return <p>Loading...</p>
 

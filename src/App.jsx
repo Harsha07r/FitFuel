@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import CategoryProducts from "./pages/CategoryProducts";
 import ProductDetails from "./pages/ProductDetails";
 import CartPage from "./pages/CartPage";
+import CatalogPage from "./pages/CatalogPage";
 
 function App() {
 
@@ -30,6 +31,12 @@ function App() {
       <Route
         path="/cart"
         element={<CartPage />}
+      />
+
+      {/* Full Catalog Page */}
+      <Route
+        path="/catalog"
+        element={<CatalogPage />}
       />
 
     </Routes>

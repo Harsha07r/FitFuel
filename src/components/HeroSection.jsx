@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 function HeroSection() {
+  const navigate = useNavigate();
   return (
     <section
       className="relative py-24 lg:py-36 overflow-hidden bg-primary-dark"
@@ -68,12 +71,12 @@ function HeroSection() {
           </a>
 
 
-          <a
+          <button
+            onClick={() => navigate('/catalog')}
             className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-base font-medium rounded-lg text-white bg-white/5 hover:bg-white/10 backdrop-blur-sm md:text-lg transition-all"
-            href="#categories"
           >
             View Catalog
-          </a>
+          </button>
 
         </div>
 

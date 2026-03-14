@@ -23,6 +23,19 @@ export function CartProvider({ children }) {
     setCartItems(prev => prev.filter(item => item.id !== id));
   };
 
+  // delta = +1 or -1; removes item automatically when qty reaches 0
+  const updateQuantity = (id, delta) => {
+    setCartItems(prev =>
+      prev
+        .map(item =>
+          item.id === id
+            ? { ...item, quantity: item.quantity + delta }
+            : item
+        )
+        .filter(item => item.quantity > 0)
+    );
+  };
+
   const clearCart = () => {
     setCartItems([]);
   };
@@ -32,6 +45,7 @@ export function CartProvider({ children }) {
       cartItems,
       addToCart,
       removeFromCart,
+      updateQuantity,
       clearCart
     }}>
       {children}
